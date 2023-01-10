@@ -1,6 +1,6 @@
 # Main terraform file for ALL the environments!!!
 terraform {
-  required_version = "~> 1.0.0"  
+  required_version = "1.3.6"  
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "onebeyond-paula"
