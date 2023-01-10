@@ -69,23 +69,23 @@ resource "aws_instance" "app_server" {
   
 }
 
-# resource "aws_instance" "app_server2" {
-#     # ami                                  = "ami-03f8756d29f0b5f21"
-#     # availability_zone                    = "us-west-2a"
-#     # instance_type                        = "t2.micro"
-#     # key_name                             = "AWS"
-#     # security_groups                      = [
-#     #     "test-sg",
-#     # ]
-#     # subnet_id                            = "subnet-08846cac2c6aaf9ac"
-#     # tags                                 = {
-#     #     "Name" = "appconsole"
-#     # }
-#     # tags_all                             = {
-#     #     "Name" = "appconsole"
-#     # }
-#     # # vpc_security_group_ids               = [
-#     # #     "sg-098d446bdba18db8a",
-#     # # ]
+resource "aws_instance" "app_server2" {
+    ami                                  = "ami-03f8756d29f0b5f21"
+    availability_zone                    = "us-west-2a"
+    instance_type                        = "t2.micro"
+    key_name                             = "AWS"
+    security_groups                      = [
+        "test-sg",
+    ]
+    subnet_id                            = "subnet-08846cac2c6aaf9ac"
+    tags                                 = {
+        "Name" = "appconsole"
+    }
+    tags_all                             = {
+        "Name" = "appconsole"
+    }
+    # vpc_security_group_ids               = [
+    #     "sg-098d446bdba18db8a",
+    # ]
 
-# }
+}
